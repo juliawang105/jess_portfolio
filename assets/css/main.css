@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 
 /*
 	Spectral by HTML5 UP
@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font:inherit;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -164,7 +164,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
-		font-weight: 800;
+		/* font-weight: 800; */
 		letter-spacing: 0.225em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -177,7 +177,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.35em;
+		/* font-size: 1.35em; */
 		line-height: 1.75em;
 	}
 
@@ -3997,3 +3997,5 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	
