@@ -22,7 +22,8 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font:inherit;
+	font-family: 'Yantramanav';
+	font-style: none;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -2669,6 +2670,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		background-color: #e8e4dd
 	}
 
 		.spotlight .image {
@@ -2693,6 +2695,7 @@ input, select, textarea {
 			order: 2;
 			max-width: 48em;
 			width: 60%;
+			
 		}
 
 		.spotlight:nth-child(2n) {
@@ -2703,43 +2706,43 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			/* background-color: rgba(0, 0, 0, 0.075); */
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			/* background-color: rgba(0, 0, 0, 0.15); */
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			/* background-color: rgba(0, 0, 0, 0.225); */
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
+			/* background-color: rgba(0, 0, 0, 0.3); */
 		}
 
 		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
+			/* background-color: rgba(0, 0, 0, 0.375); */
 		}
 
 		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
+			/* background-color: rgba(0, 0, 0, 0.45); */
 		}
 
 		.spotlight:nth-child(7) {
-			background-color: rgba(0, 0, 0, 0.525);
+			/* background-color: rgba(0, 0, 0, 0.525); */
 		}
 
 		.spotlight:nth-child(8) {
-			background-color: rgba(0, 0, 0, 0.6);
+			/* background-color: rgba(0, 0, 0, 0.6); */
 		}
 
 		.spotlight:nth-child(9) {
-			background-color: rgba(0, 0, 0, 0.675);
+			/* background-color: rgba(0, 0, 0, 0.675); */
 		}
 
 		.spotlight:nth-child(10) {
-			background-color: rgba(0, 0, 0, 0.75);
+			/* background-color: rgba(0, 0, 0, 0.75); */
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -2817,7 +2820,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #263E51;
 			color: #c8ece9;
 		}
 
@@ -2980,7 +2983,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #263E51;
 			color: #d3d4e4;
 		}
 

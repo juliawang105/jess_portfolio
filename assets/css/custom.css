@@ -4,8 +4,9 @@ h2#jqw{
   font-weight: lighter;
 }
 
-#create{
-  font-family: 'Yantramanav', sans-serif;
-  font-style: unset;
-  color: black;
+.create{
+  font-family: 'Yantramanav';
+  font-weight: lighter;
+  text-align: center;
+  font-size: 30px;
 }
