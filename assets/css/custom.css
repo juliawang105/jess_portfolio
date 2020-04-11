@@ -7,16 +7,14 @@ h2#jqw{
   font-weight: lighter;
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 500px;
 }
 
 .create{
-  
   text-align: center;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 0.225em;
-  
 }
 
 .inner {
