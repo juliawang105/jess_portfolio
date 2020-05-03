@@ -7,12 +7,14 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '*']
+    extensions: ['.js', '.jsx', '*', '.css']
   },
   module: {
     rules: [
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       {
         test: /\.jsx?$/,
+        
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
