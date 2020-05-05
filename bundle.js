@@ -99,7 +99,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _splash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./splash */ "./components/splash.jsx");
-/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navbar */ "./components/navbar.jsx");
+/* harmony import */ var _graphic_design__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./graphic_design */ "./components/graphic_design.jsx");
 
 
 
@@ -113,12 +113,104 @@ var App = function App() {
     component: _splash__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/navbar",
-    component: _navbar__WEBPACK_IMPORTED_MODULE_3__["default"]
+    path: "/graphic_design",
+    component: _graphic_design__WEBPACK_IMPORTED_MODULE_3__["default"]
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./components/graphic_design.jsx":
+/*!***************************************!*\
+  !*** ./components/graphic_design.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_graphic_design__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/graphic_design */ "./images/graphic_design.js");
+/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navbar */ "./components/navbar.jsx");
+/* harmony import */ var _stylesheets_graphic_design_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../stylesheets/graphic_design.css */ "./stylesheets/graphic_design.css");
+/* harmony import */ var _stylesheets_graphic_design_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_graphic_design_css__WEBPACK_IMPORTED_MODULE_3__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+
+var GraphicDesign = /*#__PURE__*/function (_React$Component) {
+  _inherits(GraphicDesign, _React$Component);
+
+  var _super = _createSuper(GraphicDesign);
+
+  function GraphicDesign(props) {
+    var _this;
+
+    _classCallCheck(this, GraphicDesign);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      gd: true
+    };
+    return _this;
+  }
+
+  _createClass(GraphicDesign, [{
+    key: "attachImages",
+    value: function attachImages() {
+      var images = _images_graphic_design__WEBPACK_IMPORTED_MODULE_1__["graphic_design"];
+      var imgArr = images.map(function (img) {
+        var newImg = document.createElement('img');
+        newImg.src = img.imageUrl;
+        return newImg;
+      }); // debugger
+
+      return imgArr;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var test = this.attachImages()[0]; // debugger
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        state: this.state
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: ".gd-images"
+      }));
+    }
+  }]);
+
+  return GraphicDesign;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (GraphicDesign);
 
 /***/ }),
 
@@ -168,21 +260,24 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
   function NavBar(props) {
     _classCallCheck(this, NavBar);
 
-    return _super.call(this, props);
+    return _super.call(this, props); // debugger
   }
 
   _createClass(NavBar, [{
     key: "render",
     value: function render() {
+      // debugger
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "navbar"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav-button"
       }, "Home/logo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav-button"
-      }, "About Me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav-button"
       }, "Graphic Design"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "nav-button"
+      }, "Logos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav-button"
       }, "Illustrations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav-button"
@@ -209,6 +304,8 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _stylesheets_splash_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/splash.css */ "./stylesheets/splash.css");
+/* harmony import */ var _stylesheets_splash_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_splash_css__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -233,6 +330,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var Splash = /*#__PURE__*/function (_React$Component) {
   _inherits(Splash, _React$Component);
 
@@ -247,7 +345,19 @@ var Splash = /*#__PURE__*/function (_React$Component) {
   _createClass(Splash, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "This is Splash");
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splash"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "JQW LOGO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splash-button"
+      }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splash-button"
+      }, "Graphic Design"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splash-button"
+      }, "Logos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splash-button"
+      }, "Illustrations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splash-button"
+      }, "Contact"));
     }
   }]);
 
@@ -256,6 +366,36 @@ var Splash = /*#__PURE__*/function (_React$Component) {
 
 ;
 /* harmony default export */ __webpack_exports__["default"] = (Splash);
+
+/***/ }),
+
+/***/ "./images/graphic_design.js":
+/*!**********************************!*\
+  !*** ./images/graphic_design.js ***!
+  \**********************************/
+/*! exports provided: graphic_design */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "graphic_design", function() { return graphic_design; });
+var graphic_design = [{
+  "id": 1,
+  "title": "Evaporate",
+  "imageUrl": "https://jqw-portfolio.s3-us-west-1.amazonaws.com/Graphic+design+/Evaporate.jpg"
+}, {
+  "id": 2,
+  "title": "Lucky 7",
+  "imageUrl": "https://jqw-portfolio.s3-us-west-1.amazonaws.com/Graphic+design+/Lucky_-_7.jpg"
+}, {
+  "id": 3,
+  "title": "Lucky Acorn",
+  "imageUrl": "https://jqw-portfolio.s3-us-west-1.amazonaws.com/Graphic+design+/Lucky_-_Acorn.jpg"
+}, {
+  "id": 4,
+  "title": "Lucky Clover",
+  "imageUrl": "https://jqw-portfolio.s3-us-west-1.amazonaws.com/Graphic+design+/Lucky_-_Clover.jpg"
+}];
 
 /***/ }),
 
@@ -375,6 +515,24 @@ module.exports = _inheritsLoose;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./stylesheets/graphic_design.css":
+/*!******************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./stylesheets/graphic_design.css ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".gd-images{\n  height: 100%;\n  width: 100%;\n  border: 1px solid black;\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./stylesheets/navbar.css":
 /*!**********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./stylesheets/navbar.css ***!
@@ -387,6 +545,24 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-lo
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, ".navbar{\n  width: 100vw;\n  height: 90px;\n  border: 1px solid black;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.nav-button{\n  border: 1px solid blue;\n  height: 30px;\n  width: 100px;\n  padding: 10px;\n  display: flex;\n  align-items: center;\n  text-align: center;\n  justify-content: center;\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./stylesheets/splash.css":
+/*!**********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./stylesheets/splash.css ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".splash{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  /* height: 100%;\n  width: 100% */\n  \n}\n\n#root{\n  width: auto;\n  height: inherit;\n  overflow: hidden;\n  background-color: aqua;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -33256,6 +33432,35 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./stylesheets/graphic_design.css":
+/*!****************************************!*\
+  !*** ./stylesheets/graphic_design.css ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./graphic_design.css */ "./node_modules/css-loader/dist/cjs.js!./stylesheets/graphic_design.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
 /***/ "./stylesheets/navbar.css":
 /*!********************************!*\
   !*** ./stylesheets/navbar.css ***!
@@ -33265,6 +33470,35 @@ module.exports = g;
 
 var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./navbar.css */ "./node_modules/css-loader/dist/cjs.js!./stylesheets/navbar.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./stylesheets/splash.css":
+/*!********************************!*\
+  !*** ./stylesheets/splash.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./splash.css */ "./node_modules/css-loader/dist/cjs.js!./stylesheets/splash.css");
 
             content = content.__esModule ? content.default : content;
 
