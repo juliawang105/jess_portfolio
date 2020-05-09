@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphic_design } from '../images/graphic_design';
 import NavBar from './navbar';
+import GDItem from './gd_item'
 import '../stylesheets/graphic_design.css'
 
 class GraphicDesign extends React.Component{
@@ -11,28 +12,22 @@ class GraphicDesign extends React.Component{
     };
   };
 
-  attachImages(){
-    
-    let images = graphic_design;
-    let imgArr = images.map(img => {
-      let newImg = document.createElement('img');
-      newImg.src = img.imageUrl;
-      return newImg;
-    });
-
-    // debugger
-    return imgArr;
-  }
-
   render(){
-    let test = this.attachImages()[0]
+    let images = graphic_design.map( image => {
+      return(
+        <GDItem
+          key={image.id}
+          title={image.title}
+          imageUrl={image.imageUrl}
+        />
+      )
+    })
     // debugger
     return(
-      <div>
+      <div className='gd'>
         <NavBar state={this.state}/>
-        <div className=".gd-images">
-          
-        </div>
+        <div className="gd-images">{images}</div>
+        
       </div>
       
     )
