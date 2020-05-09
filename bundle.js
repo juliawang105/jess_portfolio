@@ -409,7 +409,10 @@ var Splash = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "JQW LOGO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "https://jqw-portfolio.s3-us-west-1.amazonaws.com/Other+elements/JQW_Signature.png",
+        alt: ""
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash-button"
       }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash-button"
@@ -616,7 +619,7 @@ module.exports = _inheritsLoose;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".gd{\n  height: 100vh;\n  width: 100%;\n  border: 1px solid black;\n}\n\n.gd-images{\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n\n}\n\n.gd-image{\n  height: 300px;\n  width: auto;\n  margin: 20px;\n\n}", ""]);
+exports.push([module.i, ".gd{\n  height: 100vh;\n  width: 100%;\n  overflow-y: scroll;\n}\n\n.gd-images{\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  border: 1px solid black\n  \n\n}\n\n.gd-image{\n  height: 300px;\n  width: auto;\n  margin: 20px;\n\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -652,7 +655,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".splash{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  /* height: 100%;\n  width: 100% */\n  \n}\n\n#root{\n  width: auto;\n  height: inherit;\n  overflow: hidden;\n  background-color: aqua;\n}", ""]);
+exports.push([module.i, ".splash{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  height: 100vh\n  \n}\n\n#root{\n  width: auto;\n  height: inherit;\n  overflow: hidden;\n}", ""]);
 // Exports
 module.exports = exports;
 

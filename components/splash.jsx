@@ -6,7 +6,7 @@ class Splash extends React.Component {
   render(){
     return (
       <div className="splash">
-        <div>JQW LOGO</div>
+        <img src="https://jqw-portfolio.s3-us-west-1.amazonaws.com/Other+elements/JQW_Signature.png" alt=""/>
         <div className="splash-button">About</div>
         <div className="splash-button">Graphic Design</div>
         <div className="splash-button">Logos</div>
