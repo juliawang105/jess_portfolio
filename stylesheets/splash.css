@@ -12,3 +12,14 @@
   height: inherit;
   overflow: hidden;
 }
+
+.splash-button{
+  border: 1px solid black;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  box-shadow: 17px 13px grey;
+}

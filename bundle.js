@@ -655,7 +655,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".splash{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  height: 100vh\n  \n}\n\n#root{\n  width: auto;\n  height: inherit;\n  overflow: hidden;\n}", ""]);
+exports.push([module.i, ".splash{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  height: 100vh\n  \n}\n\n#root{\n  width: auto;\n  height: inherit;\n  overflow: hidden;\n}\n\n.splash-button{\n  border: 1px solid black;\n  width: 150px;\n  height: 40px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 5%;\n  box-shadow: 17px 13px grey;\n}", ""]);
 // Exports
 module.exports = exports;
 
