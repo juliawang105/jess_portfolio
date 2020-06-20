@@ -86,6 +86,29 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/about.jsx":
+/*!******************************!*\
+  !*** ./components/about.jsx ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ "./components/navbar.jsx");
+
+
+
+var About = function About() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), "This will be about me");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (About);
+
+/***/ }),
+
 /***/ "./components/app.jsx":
 /*!****************************!*\
   !*** ./components/app.jsx ***!
@@ -101,6 +124,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _splash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./splash */ "./components/splash.jsx");
 /* harmony import */ var _graphic_design__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./graphic_design */ "./components/graphic_design.jsx");
 /* harmony import */ var _illustrations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./illustrations */ "./components/illustrations.jsx");
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./about */ "./components/about.jsx");
+
 
 
 
@@ -117,6 +142,10 @@ var App = function App() {
     exact: true,
     path: "/illustrations",
     component: _illustrations__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/about",
+    component: _about__WEBPACK_IMPORTED_MODULE_5__["default"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/",
@@ -486,9 +515,12 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
       // debugger
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "navbar"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
         className: "nav-button"
-      }, "Home/logo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Home/logo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+        to: "/about",
+        activeClassName: "curr",
         className: "nav-button"
       }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
         to: "/graphic_design",
@@ -574,6 +606,7 @@ var Splash = /*#__PURE__*/function (_React$Component) {
         src: "https://jqw-portfolio.s3-us-west-1.amazonaws.com/Other+elements/JQW_Signature.png",
         alt: ""
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: '/about',
         className: "splash-button"
       }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: '/graphic_design',
@@ -860,7 +893,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".splash{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  height: 100vh\n  \n}\n\n#root{\n  width: auto;\n  height: inherit;\n  overflow: hidden;\n}\n\n.splash-button{\n  border: 1px solid black;\n  width: 150px;\n  height: 40px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 5%;\n  box-shadow: 17px 13px grey;\n  text-decoration: none;\n  color: black;\n}", ""]);
+exports.push([module.i, ".splash{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  height: 100vh\n  \n}\n\n#root{\n  width: auto;\n  height: inherit;\n  overflow: hidden;\n}\n\n.splash-button{\n  border: 1px solid black;\n  width: 150px;\n  height: 40px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 5%;\n  box-shadow: 17px 13px grey;\n  text-decoration: none;\n  color: black;\n}\n\n.splash-button:hover{\n  background-color: silver;\n}", ""]);
 // Exports
 module.exports = exports;
 

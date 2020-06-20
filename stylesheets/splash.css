@@ -25,3 +25,7 @@
   text-decoration: none;
   color: black;
 }
+
+.splash-button:hover{
+  background-color: silver;
+}

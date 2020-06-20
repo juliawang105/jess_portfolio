@@ -8,7 +8,7 @@ class Splash extends React.Component {
     return (
       <div className="splash">
         <img src="https://jqw-portfolio.s3-us-west-1.amazonaws.com/Other+elements/JQW_Signature.png" alt=""/>
-        <Link className="splash-button">About</Link>
+        <Link to={'/about'} className="splash-button">About</Link>
         <Link to={'/graphic_design'} className="splash-button">Graphic Design</Link>
         <Link className="splash-button">Logos</Link>
         <Link to={'/illustrations'}className="splash-button">Illustrations</Link>
