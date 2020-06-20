@@ -1,13 +1,19 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { HashRouter } from "react-router-dom";
 import Splash from './splash';
-import GraphicDesign from './graphic_design'
+import GraphicDesign from './graphic_design';
+import Illustrations from './illustrations';
+
 
 const App = () => (
   <HashRouter>
-    <Route exact path="/" component={Splash} />
-    <Route exact path="/graphic_design" component={GraphicDesign} />
+    <Switch>
+      <Route exact path="/graphic_design" component={GraphicDesign} />
+      <Route exact path="/illustrations" component={Illustrations} />
+      <Route exact path="/" component={Splash} />
+      <Redirect to="/" />
+    </Switch>
   </HashRouter>
 );
 

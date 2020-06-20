@@ -16,4 +16,10 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  text-decoration: none;
+  color: black
+}
+
+.curr{
+  color: slateblue
 }

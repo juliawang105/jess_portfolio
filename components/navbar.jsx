@@ -1,5 +1,6 @@
 import React from 'react';
-import '../stylesheets/navbar.css'
+import '../stylesheets/navbar.css';
+import { NavLink } from 'react-router-dom'
 
 class NavBar extends React.Component{
   constructor(props){
@@ -13,9 +14,9 @@ class NavBar extends React.Component{
       <div className="navbar">
         <div className="nav-button">Home/logo</div>
         <div className="nav-button">About</div>
-        <div className="nav-button">Graphic Design</div>
+        <NavLink to="/graphic_design" activeClassName="curr" className="nav-button">Graphic Design</NavLink>
         <div className="nav-button">Logos</div>
-        <div className="nav-button">Illustrations</div>
+        <NavLink to="/illustrations" activeClassName="curr" className="nav-button" className="nav-button">Illustrations</NavLink>
         <div className="nav-button">Contact</div>
       </div>
     );
