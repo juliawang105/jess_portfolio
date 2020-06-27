@@ -14,8 +14,8 @@ class Modal extends React.Component{
       modalShow= "modal-show"
     }
     return(
-      <div className={modalShow}>
-        <div className="modal-child" onClick={this.props.handleClick}>
+      <div className={modalShow} onClick={this.props.handleClick}>
+        <div className="modal-child" >
           <img className="modal-img" src={this.props.image}/>
         </div>
         
