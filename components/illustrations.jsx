@@ -22,7 +22,6 @@ class Illustrations extends React.Component{
       <div className='gd'>
         <NavBar state={this.state} />
         <div className="gd-images">{images}</div>
-
       </div>
       
     )
