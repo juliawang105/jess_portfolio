@@ -8,16 +8,16 @@ class Modal extends React.Component{
   render(){
     // debugger
     let modalShow;
-    let show = this.props.show;
     if(!this.props.show){
-      modalShow = "modal-hide";
-    } else {
-      modalShow = "modal-show"
+      modalShow= "modal-hide";
+    } else if(this.props.show === true) {
+      modalShow= "modal-show"
     }
     return(
       <div className={modalShow}>
-        
-        <div className="modal-child">Hello</div>
+        <div className="modal-child" onClick={this.props.handleClick}>
+          <img className="modal-img" src={this.props.image}/>
+        </div>
         
       </div>
     )

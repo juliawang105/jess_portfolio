@@ -12,16 +12,17 @@ class IllustrateItem extends React.Component {
   }
 
   handleClick(e){
+    e.preventDefault();
     let currState = this.state.show;
     this.setState({show: !currState});
-    debugger
+    // debugger
   }
 
   render() {
     return (
       <div>
         <img onClick={this.handleClick} className="gd-image" src={this.props.imageUrl}></img>
-        <Modal show={this.state.show} />
+        <Modal show={this.state.show} image={this.props.imageUrl} handleClick={this.handleClick} />
       </div>
       
     )

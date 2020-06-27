@@ -374,11 +374,11 @@ var IllustrateItem = /*#__PURE__*/function (_React$Component) {
   _createClass(IllustrateItem, [{
     key: "handleClick",
     value: function handleClick(e) {
+      e.preventDefault();
       var currState = this.state.show;
       this.setState({
         show: !currState
-      });
-      debugger;
+      }); // debugger
     }
   }, {
     key: "render",
@@ -388,7 +388,9 @@ var IllustrateItem = /*#__PURE__*/function (_React$Component) {
         className: "gd-image",
         src: this.props.imageUrl
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        show: this.state.show
+        show: this.state.show,
+        image: this.props.imageUrl,
+        handleClick: this.handleClick
       }));
     }
   }]);
@@ -531,19 +533,22 @@ var Modal = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       // debugger
       var modalShow;
-      var show = this.props.show;
 
       if (!this.props.show) {
         modalShow = "modal-hide";
-      } else {
+      } else if (this.props.show === true) {
         modalShow = "modal-show";
       }
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: modalShow
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "modal-child"
-      }, "Hello"));
+        className: "modal-child",
+        onClick: this.props.handleClick
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "modal-img",
+        src: this.props.image
+      })));
     }
   }]);
 
@@ -974,7 +979,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".modal-hide {\n  display: none\n}\n\n.modal-show{\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.4);\n  z-index: 10;\n}\n\n.modal-child{\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border: 2px solid pink;\n  height: 80%;\n  width: 80%;\n  background-color: aqua;\n}", ""]);
+exports.push([module.i, ".modal-hide {\n  display: none\n}\n\n.modal-show{\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.4);\n  z-index: 10;\n}\n\n.modal-child{\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  /* border: 2px solid pink; */\n  height: 80%;\n  width: 80%;\n  /* background-color: aqua; */\n  display: flex;\n  justify-content: center;\n}\n\n.modal-img{\n  height: 100%;\n}", ""]);
 // Exports
 module.exports = exports;
 
